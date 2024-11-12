@@ -1,18 +1,23 @@
-## SAM-adapter: Adapting SAM in Underperformed Scenes
+## SAM-Adapter: Adapting SAM in Underperformed Scenes (!!Now Support SAM2 in "SAM2-Adapter" Branch!!)
 
 Tianrun Chen, Lanyun Zhu, Chaotao Ding, Runlong Cao, Yan Wang, Shangzhan Zhang, Zejian Li, Lingyun Sun, Papa Mao, Ying Zang
 
 <a href='https://www.kokoni3d.com/'> KOKONI, Moxin Technology (Huzhou) Co., LTD </a>, Zhejiang University, Singapore University of Technology and Design, Huzhou University, Beihang University.
 
-ICCV 2023 Workshop Paper
+In Proceedings of the IEEE/CVF International Conference on Computer Vision (pp. 3367-3375).
 
   <a href='https://tianrun-chen.github.io/SAM-Adaptor/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 ## 
 
 <a href='https://arxiv.org/abs/2304.09148'><img src='https://img.shields.io/badge/ArXiv-2304.09148-red' /></a> 
-Update on 30 August: This paper will be prsented at ICCV 2023. 
 
-Update on 28 April: We tested the performance of polyp segmentation to show our approach can also work on medical datasets.
+Update on 8 Aug, 2024: We add support for adapting with SAM2 (Segment Anything 2), a more powerful backbone! Please refer our <a href="https://www.researchgate.net/publication/382940773_SAM2-Adapter_Evaluating_Adapting_Segment_Anything_2_in_Downstream_Tasks_Camouflage_Shadow_Medical_Image_Segmentation_and_More">new technical report! </a>and see the code at "SAM2-Adapter" Branch!
+
+Update on 24 July, 2024: The link of pre-trained model is updated.
+
+Update on 30 August 2023: This paper will be prsented at ICCV 2023. 
+
+Update on 28 April 2023: We tested the performance of polyp segmentation to show our approach can also work on medical datasets.
 <img src='https://tianrun-chen.github.io/SAM-Adaptor/static/images/polyp.jpg'>
 Update on 22 April: We report our SOTA result based on ViT-H version of SAM (use demo.yaml). We have also uploaded the yaml config for ViT-L and ViT-B version of SAM, suitable  GPU with smaller memory (e.g. NVIDIA Tesla V-100), although they may compromise on accuracy.
 
@@ -55,7 +60,8 @@ python test.py --config [CONFIG_PATH] --model [MODEL_PATH]
 ```
 
 ## Pre-trained Models
-https://drive.google.com/file/d/1MMUytUHkAQvMRFNhcDyyDlEx_jWmXBkf/view?usp=sharing
+https://drive.google.com/file/d/13JilJT7dhxwMIgcdtnvdzr08vcbREFlR/view?usp=sharing
+
 
 ## Dataset
 
@@ -75,6 +81,26 @@ https://drive.google.com/file/d/1MMUytUHkAQvMRFNhcDyyDlEx_jWmXBkf/view?usp=shari
 If you find our work useful in your research, please consider citing:
 
 ```
+
+@inproceedings{chen2023sam,
+  title={Sam-adapter: Adapting segment anything in underperformed scenes},
+  author={Chen, Tianrun and Zhu, Lanyun and Deng, Chaotao and Cao, Runlong and Wang, Yan and Zhang, Shangzhan and Li, Zejian and Sun, Lingyun and Zang, Ying and Mao, Papa},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={3367--3375},
+  year={2023}
+}
+
+@misc{chen2024sam2adapterevaluatingadapting,
+      title={SAM2-Adapter: Evaluating & Adapting Segment Anything 2 in Downstream Tasks: Camouflage, Shadow, Medical Image Segmentation, and More}, 
+      author={Tianrun Chen and Ankang Lu and Lanyun Zhu and Chaotao Ding and Chunan Yu and Deyi Ji and Zejian Li and Lingyun Sun and Papa Mao and Ying Zang},
+      year={2024},
+      eprint={2408.04579},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.04579}, 
+}
+
+
 @misc{chen2023sam,
       title={SAM Fails to Segment Anything? -- SAM-Adapter: Adapting SAM in Underperformed Scenes: Camouflage, Shadow, and More}, 
       author={Tianrun Chen and Lanyun Zhu and Chaotao Ding and Runlong Cao and Shangzhan Zhang and Yan Wang and Zejian Li and Lingyun Sun and Papa Mao and Ying Zang},
@@ -83,6 +109,8 @@ If you find our work useful in your research, please consider citing:
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
+
+
 ```
 
 ## Acknowledgements
