@@ -1,0 +1,27 @@
+train dataset: size=765
+  inp: shape=(3, 1024, 1024)
+  gt: shape=(1, 1024, 1024)
+val dataset: size=95
+  inp: shape=(3, 1024, 1024)
+  gt: shape=(1, 1024, 1024)
+model: #params=641.3M
+epoch 1/20, train G: loss=0.1994, val: sm=0.9843, val: em=0.9930, val: wfm=0.9801, val: mae=0.0019, 17.0m 17.0m/5.7h
+epoch 2/20, train G: loss=0.0569, val: sm=0.9842, val: em=0.9947, val: wfm=0.9781, val: mae=0.0017, 17.1m 34.1m/5.7h
+epoch 3/20, train G: loss=0.0570, val: sm=0.9831, val: em=0.9950, val: wfm=0.9715, val: mae=0.0017, 17.1m 51.2m/5.7h
+epoch 4/20, train G: loss=0.0500, val: sm=0.9853, val: em=0.9929, val: wfm=0.9772, val: mae=0.0018, 17.5m 1.1h/5.7h
+epoch 5/20, train G: loss=0.0483, val: sm=0.9848, val: em=0.9953, val: wfm=0.9779, val: mae=0.0015, 17.1m 1.4h/5.7h
+epoch 6/20, train G: loss=0.0451, val: sm=0.9861, val: em=0.9927, val: wfm=0.9827, val: mae=0.0018, 17.5m 1.7h/5.7h
+epoch 7/20, train G: loss=0.0429, val: sm=0.9863, val: em=0.9954, val: wfm=0.9807, val: mae=0.0014, 17.4m 2.0h/5.7h
+epoch 8/20, train G: loss=0.0434, val: sm=0.9847, val: em=0.9952, val: wfm=0.9828, val: mae=0.0017, 17.1m 2.3h/5.7h
+epoch 9/20, train G: loss=0.0402, val: sm=0.9854, val: em=0.9953, val: wfm=0.9768, val: mae=0.0014, 17.1m 2.6h/5.7h
+epoch 10/20, train G: loss=0.0391, val: sm=0.9787, val: em=0.9942, val: wfm=0.9578, val: mae=0.0020, 17.1m 2.9h/5.7h
+epoch 11/20, train G: loss=0.0385, val: sm=0.9868, val: em=0.9951, val: wfm=0.9838, val: mae=0.0015, 17.4m 3.2h/5.7h
+epoch 12/20, train G: loss=0.0377, val: sm=0.9868, val: em=0.9956, val: wfm=0.9819, val: mae=0.0013, 17.4m 3.4h/5.7h
+epoch 13/20, train G: loss=0.0362, val: sm=0.9851, val: em=0.9953, val: wfm=0.9750, val: mae=0.0014, 17.0m 3.7h/5.7h
+epoch 14/20, train G: loss=0.0353, val: sm=0.9863, val: em=0.9955, val: wfm=0.9802, val: mae=0.0013, 17.1m 4.0h/5.7h
+epoch 15/20, train G: loss=0.0345, val: sm=0.9853, val: em=0.9953, val: wfm=0.9755, val: mae=0.0014, 17.0m 4.3h/5.7h
+epoch 16/20, train G: loss=0.0339, val: sm=0.9864, val: em=0.9955, val: wfm=0.9796, val: mae=0.0013, 17.1m 4.6h/5.7h
+epoch 17/20, train G: loss=0.0329, val: sm=0.9863, val: em=0.9955, val: wfm=0.9790, val: mae=0.0013, 17.1m 4.9h/5.7h
+epoch 18/20, train G: loss=0.0330, val: sm=0.9851, val: em=0.9953, val: wfm=0.9739, val: mae=0.0014, 17.1m 5.2h/5.7h
+epoch 19/20, train G: loss=0.0323, val: sm=0.9866, val: em=0.9956, val: wfm=0.9803, val: mae=0.0013, 17.1m 5.4h/5.7h
+epoch 20/20, train G: loss=0.0323, val: sm=0.9865, val: em=0.9955, val: wfm=0.9796, val: mae=0.0013, 17.1m 5.7h/5.7h

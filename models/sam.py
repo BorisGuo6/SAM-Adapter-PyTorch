@@ -6,11 +6,11 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from models import register
-from .mmseg.models.sam import ImageEncoderViT, MaskDecoder, TwoWayTransformer
+from SAM_Adapter.models import register
+from SAM_Adapter.models.mmseg.models.sam import ImageEncoderViT, MaskDecoder, TwoWayTransformer
 
 logger = logging.getLogger(__name__)
-from .iou_loss import IOU
+from SAM_Adapter.models.iou_loss import IOU
 from typing import Any, Optional, Tuple
 
 
